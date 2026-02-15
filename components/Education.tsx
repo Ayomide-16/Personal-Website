@@ -17,9 +17,7 @@ const Education: React.FC = () => {
             <h3 className="text-lg font-bold text-gray-900">{EDUCATION.school}</h3>
             <div className="text-gray-800 font-medium">{EDUCATION.degree}</div>
             <div className="text-gray-600 text-sm mt-1">{EDUCATION.duration}</div>
-            <div className="mt-2 inline-block px-3 py-1 bg-green-50 text-green-700 text-sm font-semibold rounded-full border border-green-100">
-              {EDUCATION.grade}
-            </div>
+
           </div>
         </div>
       </div>

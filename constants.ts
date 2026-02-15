@@ -3,7 +3,7 @@ import { Project, SkillCategory, Award, Education } from './types';
 export const PERSONAL_INFO = {
   name: "Samuel Ayomide Abolarinwa",
   title: "Mechatronics Engineering Student | Reliable AI Systems",
-  bio: "I am a Mechatronics Engineering student with a deep interest in Embodied AI, Robotics, and Intelligent Control. My work bridges the gap between dynamic system modelling and user-oriented AI applications, striving to design intelligent machines that enhance human capability.",
+  bio: "I’m a Mechatronics Engineering student passionate about Embodied AI, robotics, and intelligent control. I enjoy working at the intersection of system dynamics and applied AI, designing machines that can sense, decide, and act autonomously. My goal is to build intelligent systems that solve real-world problems and enhance human potential.",
   email: "abolarinwasa@gmail.com",
   phone: "+234 810 411 8605",
   github: "https://github.com/Ayomide-16",
@@ -55,8 +55,7 @@ export const PROJECTS: Project[] = [
 export const EDUCATION: Education = {
   school: "Federal University of Technology, Minna",
   degree: "B.Eng. Mechatronics Engineering",
-  duration: "2023 – 2027 (Expected)",
-  grade: "CGPA: 4.64 / 5.00"
+  duration: "2023 – 2027 (Expected)"
 };
 
 export const SKILLS: SkillCategory[] = [
@@ -74,7 +73,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     category: "Tools & Web",
-    items: ["React", "Next.js", "Git/GitHub", "Supabase", "TailwindCSS"]
+    items: ["React", "Next.js", "Git/GitHub", "Supabase", "TailwindCSS", "GCP", "Amazon Cloud"]
   }
 ];
 
