@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/Ayomide-16",
   githubHandle: "Ayomide-16",
   location: "Minna, Nigeria",
-  profileImage: "./profile.jpg",
+  profileImage: "/profile.jpg",
   resume: "https://drive.google.com/file/d/1A0uNegUB06gVim5dqTpqSvEuM9ngMrYr/view?usp=sharing"
 };
 

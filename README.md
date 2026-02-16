@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This project showcases my work, skills, and jo
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://ayomide-16.github.io/Personal-Website/)
+[View Live Portfolio](https://samuel-ayomide-abolarinwa-portfolio.vercel.app/)
 
 ## ✨ Features
 
