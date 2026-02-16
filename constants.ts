@@ -2,7 +2,7 @@ import { Project, SkillCategory, Award, Education, Certification } from './types
 
 export const PERSONAL_INFO = {
   name: "Samuel Ayomide Abolarinwa",
-  title: "Mechatronics Engineering Student | Reliable AI Systems",
+  title: "Mechatronics Engineering Student | Reliable Embodied AI Systems",
   bio: "I’m a Mechatronics Engineering student passionate about Embodied AI, robotics, and intelligent control. I enjoy working at the intersection of system dynamics and applied AI, designing machines that can sense, decide, and act autonomously. My goal is to build intelligent systems that solve real-world problems and enhance human potential.",
   email: "abolarinwasa@gmail.com",
   phone: "+234 810 411 8605",
