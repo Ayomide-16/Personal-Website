@@ -24,3 +24,9 @@ export interface Education {
   degree: string;
   duration: string;
 }
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  link: string;
+}

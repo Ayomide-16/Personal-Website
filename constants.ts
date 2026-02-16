@@ -1,4 +1,4 @@
-import { Project, SkillCategory, Award, Education } from './types';
+import { Project, SkillCategory, Award, Education, Certification } from './types';
 
 export const PERSONAL_INFO = {
   name: "Samuel Ayomide Abolarinwa",
@@ -9,7 +9,8 @@ export const PERSONAL_INFO = {
   github: "https://github.com/Ayomide-16",
   githubHandle: "Ayomide-16",
   location: "Minna, Nigeria",
-  profileImage: "./profile.jpg"
+  profileImage: "./profile.jpg",
+  resume: "https://drive.google.com/file/d/1A0uNegUB06gVim5dqTpqSvEuM9ngMrYr/view?usp=sharing"
 };
 
 export const RESEARCH_INTERESTS = [
@@ -97,5 +98,71 @@ export const AWARDS: Award[] = [
     title: "Overall Best Graduating Student",
     organization: "Federal Government College Minna",
     year: "2022"
+  }
+];
+
+export const CERTIFICATIONS: Certification[] = [
+  // MathWorks
+  {
+    title: "MATLAB Onramp",
+    issuer: "MathWorks",
+    link: "https://drive.google.com/file/d/14La3zXLGWp5BI0TMtzxbdYXRuG6eAeT0/view"
+  },
+  {
+    title: "Simulink Fundamentals",
+    issuer: "MathWorks",
+    link: "https://drive.google.com/file/d/1AIjUI4IzuNfuoUEhxHW5svlgHpZtYFIn/view"
+  },
+  {
+    title: "Simulink Onramp",
+    issuer: "MathWorks",
+    link: "https://drive.google.com/file/d/14XSu9j2ZmSJ8o_q9ctj8Z58mQFtEdxFC/view"
+  },
+  {
+    title: "Control Design with Simulink Onramp",
+    issuer: "MathWorks",
+    link: "https://drive.google.com/file/d/1MYZ50NCHqWQFKkDTbXADC-58R4G5mM2U/view"
+  },
+  // Google Cloud Skills
+  {
+    title: "Introduction to Generative AI",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/19648938"
+  },
+  {
+    title: "Machine Learning Operations (MLOps) for Generative AI",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/19603751"
+  },
+  {
+    title: "Introduction to Large Language Models",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/19649275"
+  },
+  {
+    title: "Introduction to Responsible AI",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/19649384"
+  },
+  {
+    title: "Introduction to Security in the World of AI",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/19880406"
+  },
+  {
+    title: "Introduction to AI and Machine Learning on Google Cloud",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/20103497"
+  },
+  {
+    title: "Responsible AI for Developers: Fairness & Bias",
+    issuer: "Google Cloud",
+    link: "https://www.skills.google/public_profiles/5576837a-6a9c-478d-8182-da37e4cc967f/badges/20172424"
+  },
+  // Coursera
+  {
+    title: "Introduction to Data Analysis using Microsoft Excel",
+    issuer: "Coursera",
+    link: "https://drive.google.com/file/d/14FbtF2AgjtZ6XF3QfIa4ks4e2GsFnCZ0/view"
   }
 ];
