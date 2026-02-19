@@ -3,7 +3,7 @@ import { RESEARCH_INTERESTS } from '../constants';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-12 bg-white/80 backdrop-blur-sm border-y border-gray-200/60 scroll-mt-16">
+    <section id="about" className="py-12 scroll-mt-16 border-b border-gray-200/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="text-sm font-semibold text-primary-600 uppercase tracking-wider mb-2">
           Research Focus

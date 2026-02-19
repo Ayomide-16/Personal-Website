@@ -4,7 +4,7 @@ import { Award } from 'lucide-react';
 
 const Awards: React.FC = () => {
   return (
-    <section id="awards" className="py-12 bg-white/80 backdrop-blur-sm pb-24 scroll-mt-16">
+    <section id="awards" className="py-12 pb-24 scroll-mt-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">Honors & Awards</h2>
         <div className="space-y-4">

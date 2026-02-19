@@ -8,6 +8,7 @@ export const PERSONAL_INFO = {
   phone: "+234 810 411 8605",
   github: "https://github.com/Ayomide-16",
   githubHandle: "Ayomide-16",
+  linkedin: "https://www.linkedin.com/in/samuel-abolarinwa-02b070295/",
   location: "Minna, Nigeria",
   profileImage: "/profile.jpg",
   resume: "https://drive.google.com/file/d/1A0uNegUB06gVim5dqTpqSvEuM9ngMrYr/view?usp=sharing"
@@ -27,14 +28,16 @@ export const PROJECTS: Project[] = [
     award: "Third Runner-Up, Nigeria AI Hackathon (DeepFunding.ai)",
     description: "An AI-powered platform for smallholder farmers providing real-time crop analysis, soil nutrient recommendations, and pest identification. Integrated Gemini 2.5 Pro & Flash models for multi-language support (English, Hausa, Yoruba) and data-driven decision making.",
     techStack: ["TypeScript", "React", "Gemini 2.5 API", "Supabase", "TailwindCSS"],
-    link: "https://github.com/Ayomide-16"
+    link: "https://github.com/Ayomide-16",
+    year: "2024"
   },
   {
     title: "End-to-End Computer Vision System",
     subtitle: "Independent Research Project",
     description: "Constructed a complete vision pipeline recognizing specific objects (hair dryers, kites, neckties). Managed the entire lifecycle: dataset preparation, training a custom CNN with TensorFlow/Keras, and deploying via a Flask API with a responsive web interface.",
     techStack: ["Python", "TensorFlow", "Keras", "Flask", "HTML/CSS"],
-    link: "https://github.com/Ayomide-16"
+    link: "https://github.com/Ayomide-16",
+    year: "2024"
   },
   {
     title: "Jarvis Navigation Simulator",
@@ -42,14 +45,16 @@ export const PROJECTS: Project[] = [
     award: "FUTMinna MATLAB Competition Project",
     description: "Developed a voice-controlled robot navigation system using MATLAB App Designer. Implemented MFCC feature extraction and a k-NN speech recognition model, integrated with PRM and Pure Pursuit algorithms for autonomous path planning.",
     techStack: ["MATLAB", "Speech Processing", "k-NN", "Path Planning"],
-    link: "https://github.com/Ayomide-16"
+    link: "https://github.com/Ayomide-16",
+    year: "2023"
   },
   {
     title: "SmartLearn LMS Module",
     subtitle: "Content Management System",
     description: "Led development of a comprehensive content management module for an LMS. Designed authentication flows, permission hierarchies, and resolved complex API integration issues. Contributed significantly to mobile app logic and data preprocessing.",
     techStack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Supabase"],
-    link: "https://github.com/Ayomide-16"
+    link: "https://github.com/Ayomide-16",
+    year: "2023"
   }
 ];
 

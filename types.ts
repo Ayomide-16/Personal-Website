@@ -5,6 +5,7 @@ export interface Project {
   techStack: string[];
   link?: string;
   award?: string;
+  year?: string;
 }
 
 export interface SkillCategory {

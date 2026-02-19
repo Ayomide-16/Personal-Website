@@ -4,7 +4,7 @@ import { GraduationCap } from 'lucide-react';
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="py-12 bg-white/80 backdrop-blur-sm border-y border-gray-200/60 scroll-mt-16">
+    <section id="education" className="py-12 scroll-mt-16 border-b border-gray-200/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">Education</h2>
         <div className="flex items-start">

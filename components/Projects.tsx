@@ -1,74 +1,95 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { ExternalLink, Trophy } from 'lucide-react';
+import { ExternalLink, Trophy, Github } from 'lucide-react';
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-16 scroll-mt-16">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Selected Projects</h2>
-        <div className="grid grid-cols-1 gap-6">
+    <section id="projects" className="py-20 scroll-mt-16 border-b border-gray-200/60">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-end mb-10">
+          <h2 className="text-3xl font-bold text-gray-900">Selected Projects</h2>
+          <a
+            href="https://github.com/Ayomide-16?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
+          >
+            View All Projects <ExternalLink className="h-4 w-4" />
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {PROJECTS.map((project, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-sm border-x border-b border-gray-100 border-t-4 border-t-primary-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease-out group"
+              className="group relative flex flex-col h-full p-6 md:p-0 transition-all duration-300 hover:bg-gray-50/50 rounded-2xl md:hover:bg-transparent"
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  {project.subtitle && (
-                    <p className="text-sm text-gray-500 font-medium mt-1">{project.subtitle}</p>
-                  )}
-                </div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                  {project.year || '2024'}
+                </span>
+
                 {project.link && (
-                  <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hidden md:inline-flex items-center text-gray-400 hover:text-primary-600 transition-colors mt-2 md:mt-0"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                  </a>
+                  <div className="flex gap-4">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-primary-600 transition-colors"
+                      aria-label="View Project"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
+                    {/* Add a secondary link icon if needed, or just keep one. Inspiration has two usually. */}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-primary-600 transition-colors"
+                      aria-label="External Link"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  </div>
                 )}
               </div>
 
-              {project.award && (
-                <div className="inline-flex items-center gap-2 mt-2 mb-3 px-3 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-full border border-amber-100">
-                  <Trophy className="h-3 w-3" />
-                  {project.award}
-                </div>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
+                <a href={project.link || '#'} target="_blank" rel="noopener noreferrer" className="focus:outline-none">
+                  <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 md:block"></span>
+                  {project.title}
+                </a>
+              </h3>
+
+              {project.subtitle && (
+                <p className="text-sm text-gray-500 font-medium mb-3">{project.subtitle}</p>
               )}
 
-              <p className="text-gray-600 leading-relaxed text-sm md:text-base mb-4 mt-2">
+              <p className="text-gray-600 leading-relaxed text-base flex-grow">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-2 mt-4">
-                {project.techStack.map((tech, i) => (
-                  <span 
-                    key={i}
-                    className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-gray-50 text-gray-700 border border-gray-200"
-                  >
-                    {tech}
+              {project.award && (
+                <div className="mt-4">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-amber-50 text-amber-700 text-xs font-medium rounded-full border border-amber-100">
+                    <Trophy className="h-3 w-3" />
+                    {project.award}
                   </span>
-                ))}
-              </div>
-              
-              {/* Mobile Only Link */}
-              {project.link && (
-                <div className="mt-4 md:hidden">
-                  <a 
-                    href={project.link} 
-                    className="text-sm font-medium text-primary-600 hover:text-primary-700 flex items-center"
-                  >
-                    View Project <ExternalLink className="h-3 w-3 ml-1" />
-                  </a>
                 </div>
               )}
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center md:hidden">
+          <a
+            href="https://github.com/Ayomide-16?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 transition-colors"
+          >
+            View All Projects <ExternalLink className="h-4 w-4 ml-2" />
+          </a>
         </div>
       </div>
     </section>

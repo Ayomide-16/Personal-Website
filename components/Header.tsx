@@ -54,13 +54,12 @@ const Header: React.FC = () => {
     { name: 'About', href: '#about', id: 'about' },
     { name: 'Projects', href: '#projects', id: 'projects' },
     { name: 'Education', href: '#education', id: 'education' },
-    { name: 'Tech Stack', href: '#skills', id: 'skills' },
     { name: 'Certifications', href: '#certifications', id: 'certifications' },
     { name: 'Awards', href: '#awards', id: 'awards' },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-40 bg-white/70 backdrop-blur-md border-b border-gray-200/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Desktop Logo */}

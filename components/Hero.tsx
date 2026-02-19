@@ -1,50 +1,65 @@
 import React from 'react';
-import { Mail, Github, Download } from 'lucide-react';
+import { Mail, Github, FileText, MapPin, Linkedin } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="pt-28 pb-12 md:pt-36 md:pb-24">
+    <section id="home" className="pt-28 pb-12 md:pt-36 md:pb-24 border-b border-gray-200/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16">
 
           {/* Text Content */}
-          <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4">
+          <div className="flex-1 text-center md:text-left min-w-0">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight mb-4 whitespace-nowrap">
               {PERSONAL_INFO.name}
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-600 font-medium mb-6">
               {PERSONAL_INFO.title}
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+
+            <div className="flex items-center justify-center md:justify-start text-gray-500 mb-8 font-medium">
+              <MapPin className="h-5 w-5 mr-2" />
+              <span>{PERSONAL_INFO.location}</span>
+            </div>
+
+            <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-2xl mx-auto md:mx-0">
               {PERSONAL_INFO.bio}
             </p>
 
-            <div className="flex flex-wrap justify-center md:justify-start gap-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-8">
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 hover:text-primary-600 transition-colors duration-200"
+                className="group flex items-center gap-2 text-base font-semibold text-gray-500 hover:text-primary-600 transition-colors"
               >
-                <Mail className="h-4 w-4 mr-2" />
-                Contact Me
+                <Mail className="h-5 w-5 group-hover:text-primary-600 transition-colors" />
+                <span>Email</span>
               </a>
               <a
                 href={PERSONAL_INFO.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 hover:text-primary-600 transition-colors duration-200"
+                className="group flex items-center gap-2 text-base font-semibold text-gray-500 hover:text-primary-600 transition-colors"
               >
-                <Github className="h-4 w-4 mr-2" />
-                GitHub
+                <Github className="h-5 w-5 group-hover:text-primary-600 transition-colors" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href={PERSONAL_INFO.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 text-base font-semibold text-gray-500 hover:text-primary-600 transition-colors"
+              >
+                <Linkedin className="h-5 w-5 group-hover:text-primary-600 transition-colors" />
+                <span>LinkedIn</span>
               </a>
               <a
                 href={PERSONAL_INFO.resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 shadow-sm transition-colors duration-200"
+                className="group flex items-center gap-2 text-base font-semibold text-gray-500 hover:text-primary-600 transition-colors"
               >
-                <Download className="h-4 w-4 mr-2" />
-                Resume
+                <FileText className="h-5 w-5 group-hover:text-primary-600 transition-colors" />
+                <span>CV</span>
               </a>
             </div>
           </div>
